@@ -19,6 +19,6 @@ export class BookService {
 
   public save(book: Book)
   {
-    return this.http.post<Book>(this.baseUrl, book);
+    return this.http.post<Book>(this.baseUrl,book);
   }
 }

@@ -19,7 +19,6 @@ export class CreateBookComponent {
   onSubmit() {
     this.bookService.save(this.book).subscribe(data => {
       console.log(data)
-      this.book = new Book();
       this.gotoList();
     },
     error => console.log(error));
