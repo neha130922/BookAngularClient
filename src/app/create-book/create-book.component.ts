@@ -12,7 +12,7 @@ export class CreateBookComponent {
 
   book: Book;
 
-  constructor(private route: ActivatedRoute, private router: Router, private bookService: BookService) {
+  constructor(private router: Router, private bookService: BookService) {
     this.book = new Book();
   }
 
